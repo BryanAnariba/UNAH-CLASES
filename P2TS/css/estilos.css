@@ -1,0 +1,6 @@
+#home-section {
+    background: url(../img/22.jpg) no-repeat;
+    min-height:100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}

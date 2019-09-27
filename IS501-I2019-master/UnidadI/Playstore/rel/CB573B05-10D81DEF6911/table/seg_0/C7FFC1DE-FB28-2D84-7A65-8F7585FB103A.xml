@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C7FFC1DE-FB28-2D84-7A65-8F7585FB103A" name="TBL_SUCURSALES">
+<createdBy>marin</createdBy>
+<createdTime>2019-02-07 23:39:28 UTC</createdTime>
+<ownerDesignName>Playstore</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_SUCURSAL" id="BD77F84D-603A-FA43-1612-C5FB0F8A3076">
+<createdBy>marin</createdBy>
+<createdTime>2019-02-07 23:40:46 UTC</createdTime>
+<ownerDesignName>Playstore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_SUCURSAL" id="9DECBDCF-23A0-DC64-817B-CD664EED5C37">
+<createdBy>marin</createdBy>
+<createdTime>2019-02-07 23:40:46 UTC</createdTime>
+<ownerDesignName>Playstore</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_ADMINISTRADOR" id="0E8321B6-9367-99CE-47AE-C6433EE7B14E">
+<createdBy>marin</createdBy>
+<createdTime>2019-02-07 23:41:03 UTC</createdTime>
+<ownerDesignName>Playstore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E26F7863-446F-EB3C-0341-FE2037CAC6C6" referredColumn="C27B3E79-30A3-DDA7-C658-2DB45E6781C6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1AFD3CE3-C597-9AD2-49DE-2BB6C846F08F" name="TBL_SUCURSALES_PK">
+<createdBy>marin</createdBy>
+<createdTime>2019-02-07 23:40:50 UTC</createdTime>
+<ownerDesignName>Playstore</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD77F84D-603A-FA43-1612-C5FB0F8A3076"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5F76665D-6FE1-18E2-F8AB-79803C1A610A" name="TBL_SUCURSALES__UN">
+<createdBy>marin</createdBy>
+<createdTime>2019-02-07 23:42:02 UTC</createdTime>
+<ownerDesignName>Playstore</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E8321B6-9367-99CE-47AE-C6433EE7B14E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF3253B4-0ACF-26C4-8217-93DA0BBB883A" name="SUC_ADM_FK">
+<createdBy>marin</createdBy>
+<createdTime>2019-02-07 23:41:03 UTC</createdTime>
+<ownerDesignName>Playstore</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E8321B6-9367-99CE-47AE-C6433EE7B14E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

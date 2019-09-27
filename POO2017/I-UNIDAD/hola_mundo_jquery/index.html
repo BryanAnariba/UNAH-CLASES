@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.contenido-cool{
+			background-color: green;
+			color:pink;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//Se ejecutara esta funcion cuando el DOM este listo
+			alert($("#txt-nombre").val());
+		});
+	</script>
+	<input type="text" name="txt-nombre" id="txt-nombre" value="Pedro">
+	<input id="btn-mostrar-nombre" type="button" value="Mostrar nombre">
+	<input id="btn-asignar-nombre" type="button" value="Asignar nombre">
+	<div id="div-contenido" style="background-color: #000; color:#fff;">Contenido div</div>
+	<button id="btn-cambiar-contenido" type="button">Cambiar contenido div</button>
+	<button type="button" onclick="cambiarEstilos();">Cambiar estilo div</button>
+	<button type="button" onclick="asignarClaseCSS();">Asignar clase CSS</button>
+	<img id="img" src="img/vegeta.jpg" style="display:none;"><br>
+	<button id="btn-ocultar-imagen">Ocultar Imagen</button>
+	<button id="btn-mostrar-imagen">Mostrar Imagen</button>
+	
+	<script type="text/javascript">
+		function cambiarEstilos(){
+			$("#div-contenido").css("background-color","#ff0000");
+			$("#div-contenido").css("color","#0000ff");
+		}
+
+		function asignarClaseCSS(){
+			$("#div-contenido").addClass("contenido-cool");
+		}
+
+		function sumar(a,b,c){
+			if (c ==undefined)
+				return a+b;
+			else
+				return a+b+c;
+		}
+		//alert(sumar(1,2));
+		//alert(sumar(1,2,3));
+
+		$("#btn-mostrar-nombre").click(function (){	
+			alert("Evento gestionado por JQUERy");
+			alert($("#txt-nombre").val());
+			//document.getElementById("txt-nombre").value;
+		});
+
+		$("#btn-asignar-nombre").click(function(){
+			$("#txt-nombre").val("Matusalen");
+		});
+
+		$("#btn-cambiar-contenido").click(function(){
+			$("#div-contenido").html("Este es el nuevo contenido de la etiquetda div :V");
+			//document.getElementById("div-contenido").innerHTML = "Contenido";
+		});
+
+		$("#txt-nombre").keypress(function(event){
+			console.log(event.key);
+			$("#div-contenido").html($("#div-contenido").html()+event.key);
+		});
+
+		$("#btn-ocultar-imagen").click(function(){
+			$("#img").fadeOut(2000);
+			//$("#img").hide();
+		});
+
+		$("#btn-mostrar-imagen").click(function(){
+			$("#img").fadeIn(2000);
+			//$("#img").show();
+		});
+		
+	</script>	
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
+
+    
+    
+    <title>Youtube</title>
+</head>
+<body class = "cuerpo">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style = "background-color: #FFFFFF!important;">
+                <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                  <form id = "encabezado" class="form-inline my-2 my-lg-0" >
+                    <input id = "barra"class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit" style = "background-color: #F0F0F0; color:black;
+                    border-color: #F0F0F0">Search</button>
+                  </form>
+                </div>
+        </nav>
+        <div class="container">
+                <div class = "row" id = "portafolio">
+                    
+                </div>
+        </div>
+        <form class="form-signin">
+                <input type="text" id="titulo" class="form-control" placeholder="Titulo:" required autofocus>
+                <input type="text" id="caratula" class="form-control" placeholder="URL Caratula" required autofocus>
+                <div>
+                    <select id="videos" class="form-control"></select>
+                </div>
+                <input type="text" id="visualizacion" class="form-control" placeholder="Visualizaciones" required autofocus>
+                <input type="text" id="duracion" class="form-control" placeholder="Duracion HH:MM" required autofocus>
+                <input type="text" id="subido" class="form-control" placeholder="Subido hace X horas" required autofocus>
+                <button class="btn btn-lg btn btn-danger " type="button" onclick="registro_arreglo();">Guardar</button>
+        </form>
+        <script src="js/controlador.js"></script>
+        <footer>
+            <div class = "container">
+                <div id = "pie">
+                    <h2>Examen I unidad Programacion Orientada a Objetos</h2>
+                </div>    
+            </div>
+        </footer>
+</body>
+</html>
